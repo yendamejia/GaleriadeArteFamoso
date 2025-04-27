@@ -18,8 +18,8 @@ document.addEventListener('DOMContentLoaded', function() {
         },
         {
             id: 'el-grito',
-            urlMiniatura: 'imagenes/el-grito.PNG',
-            urlDetalle: 'imagenes/el-grito.PNG',
+            urlMiniatura: 'imagenes/el-grito.png',
+            urlDetalle: 'imagenes/el-grito.png',
             titulo: 'El grito',
             autor: 'Edvard Munch',
             descripcion: 'Esta pintura expresionista icónica representa una figura andrógina en primer plano, con el rostro angustiado y la boca abierta en un grito silencioso. La figura se encuentra en un puente, con un paisaje turbulento y un cielo de colores intensos y ondulantes en el fondo. Dos figuras oscuras se distinguen a lo lejos. La obra transmite una profunda sensación de ansiedad, alienación y terror existencial, capturando una experiencia emocional intensa.',
