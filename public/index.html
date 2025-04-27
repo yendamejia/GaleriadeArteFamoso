@@ -1,0 +1,125 @@
+<!DOCTYPE html> 
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Galeria de Arte famoso</title> 
+    
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="bootstrap/dist/css/bootstrap.min.css">
+    
+  
+    
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Special+Gothic&family=Special+Gothic+Expanded+One&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light"> 
+            <a class="navbar-brand" href="index.html">Galeria de Arte</a> <button class="navbar-toggler" type="button"
+             data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Inicio<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="galeria.html">Galeria</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="sobre-nosotros.html">Sobre Nosotros</a> 
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="container mt-5">
+        <h2>Destacados</h2>
+        <div id="galeria-imagenes">
+            <div  class="col-md-4 mb-3" >
+                <div class="card">
+                    <img src="imagenes/noche-estrellada.jpg" class="card-img-top mini" 
+                    alt="La noche estrellada de Vincent van Gogh">
+                    <div class="card-body">
+                        <h5 class="card-title">La noche estrellada</h5>
+                        <p class="card-text">Vincent van Gogh</p>
+                        <a href="detalle.html?id=noche-estrellada" class="btn btn-primary">Ver detalle </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-3">
+                <div class="card">
+                    <img src="imagenes/jardin-delicias.jpg" class="card-img-top mini" 
+                    alt="Jardin de las delicias de Bosco">
+                    <div class="card-body">
+                        <h5 class="card-title">Jardin de las delicias</h5>
+                        <p class="card-text">Bosco</p>
+                        <a href="detalle.html?id=jardin-delicias" class="btn btn-primary">Ver detalle </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-3">
+                <div class= "card">
+                    <img src="imagenes/el-grito.PNG" 
+                        class="card-img-top mini" alt="El grito">
+                    <div class="card-body">
+                        <h5 class="card-title">El grito</h5>
+                        <p class="card-text">Edvard Munch</p>
+                        <a href="detalle.html?id=el-grito" class="btn btn-primary"> Ver detalle</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-3">
+                <div class="card">
+                    <img src="imagenes/auto-retrato.jpg"
+                        class="card-img-top mini" alt="Auto retrato">
+                    <div class="card-body">
+                        <h5 class="card-title">Autorretrato con oreja vendada</h5>
+                        <p class="card-text">Vincent van Gogh</p>
+                        <a href="detalle.html?id=auto-retrato" class="btn btn-primary">Ver detalle</a>
+                     </div>
+                </div>
+            </div>
+        <div class="col-md-4 mb-3">
+            <div class="card">
+                <img src="imagenes/almuerzo-remeros.jpg" class="card-img-top mini" 
+                alt="El almuerzo de los remeros, de Pierre-Auguste Renoir">
+                <div class="card-body">
+                    <h5 class="card-title">El almuerzo de los remeros</h5>
+                    <p class="card-text">Pierre-Auguste Renoir</p>
+                    <a href="detalle.html?id=almuerzo-remeros" class="btn btn-primary">Ver detalle</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <section class="container mt-4">
+        <h2>Categorías</h2>
+        <div class="list-group">
+            <a href="galeria.html?categoria=impresionismo" class="list-group-item list-group-item-action">Impresionismo</a>
+            <a href="galeria.html?categoria=renacimiento" class="list-group-item list-group-item-action">Renacimiento</a>
+            </div>
+    </section>
+    </main>
+<footer class="text-center py-3 mt-5">
+    <p>&copy; 2025 Galería de Arte Famoso</p>
+</footer>
+<link rel="stylesheet" href="bootstrap/dist/css/bootstrap.min.css">
+
+</body>
+</html>
+
+
+
+
+
+
+
