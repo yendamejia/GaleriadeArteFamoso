@@ -17,11 +17,17 @@ header {
     padding: 10px;
 }
 
+.menu-toggle {
+    display: none; /*menu despegable settings*/
+    font-size:1.5 em;
+    cursor: pointer;
+}
 nav ul {
     list-style: none;
     padding: 0;
     text-align: center;
     margin: 0;
+    display: flex; /*changed mostrar elementos en linea en pantalla grande*/ 
 }
 
 nav ul li:last-child {
@@ -206,3 +212,51 @@ h1, h2 {
     text-align: center;
 }
 
+}
+
+#mensaje-enviado {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #0cc3c0;
+    color: #155724 !important;
+    border: 1px solid #c3e6cb;
+    border-radius: 5px;
+    text-align: center;
+}
+
+/* Estilos para el menú desplegable en pantallas pequeñas */
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block; /* Visible en pantallas pequeñas */
+    }
+
+    nav ul {
+        display: none; /* Oculto por defecto en pantallas pequeñas */
+        flex-direction: column;
+        background-color: #0f6d6f !important; /* Mismo color del header */
+        position: absolute;
+        top: 50px; /* Ajustar según la altura del header */
+        left: 0;
+        width: 100%;
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+        z-index: 1;
+    }
+
+    nav ul.active {
+        display: flex; /* Visible cuando la clase 'active' está presente */
+    }
+
+    nav ul li {
+        margin-left: 0;
+        text-align: center;
+    }
+
+    nav a {
+        padding: 15px;
+        border-bottom: 1px solid #2c2b2b; /* Separador entre enlaces */
+    }
+
+    nav a:last-child {
+        border-bottom: none; /* Eliminar el borde del último enlace */
+    }
+}
